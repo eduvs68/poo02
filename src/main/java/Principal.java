@@ -6,11 +6,10 @@
             maria.setIdade(24);
             maria.setCpf("77788899913");
             maria.setGenero("Feminino");
-            maria.setSenha("2323233223");
             maria.setTelefone("1224-5678");
             maria.mostrar();
 
-            Paciente jose = new Paciente("jose da silva","54654564","4002-8922","Masculino",24,"789987456");
+            Paciente jose = new Paciente("jose da silva","54654564","4002-8922","Masculino",24,);
             jose.mostrar();
         }
 

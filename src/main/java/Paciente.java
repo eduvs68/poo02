@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class Paciente {
     private String nome;
     private String cpf;
@@ -9,13 +7,13 @@ public class Paciente {
 
     public Paciente(){}
 
-    public Paciente(String nome, String cpf, String telefone, String genero, int idade, String senha) {
+    public Paciente(String nome, String cpf, String telefone, String genero, int idade) {
         setNome(nome);
         setCpf(cpf);
         setTelefone(telefone);
         setGenero(genero);
         setIdade(idade);
-        setSenha(senha);
+
     }
 
     public String getNome() {
@@ -58,18 +56,9 @@ public class Paciente {
         this.idade = idade;
     }
 
-    public String getSenha() {
-        return "**********";
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
     public void mostrar(){
         System.out.println("nome:"+ getNome());
         System.out.println("idade:"+ getIdade());
-        System.out.println("senha:"+ getSenha());
         System.out.println("genero:"+ getGenero());
         System.out.println("telefone:"+ getTelefone());
     }
