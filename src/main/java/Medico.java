@@ -1,55 +1,55 @@
 import java.sql.SQLOutput;
 
 public class Medico {
-        private string nome;
-        private string crm;
-        private string telefone;
-        private string especialidade;
-        private string senha;
+        private String nome;
+        private String crm;
+        private String telefone;
+        private String especialidade;
+        private String senha;
 
         public Medico(){}
 
-        public string getNome() {
+        public String getNome() {
             return nome;
         }
 
-        public void setNome(string nome) {
+        public void setNome(String nome) {
             this.nome = nome;
         }
 
-        public string getCrm() {
+        public String getCrm() {
             return crm;
         }
 
-        public void setCrm(string crm) {
+        public void setCrm(String crm) {
             this.crm = crm;
         }
 
-        public string getTelefone() {
+        public String getTelefone() {
             return telefone;
         }
 
-        public void setTelefone(string telefone) {
+        public void setTelefone(String telefone) {
             this.telefone = telefone;
         }
 
-        public string getEspecialidade() {
+        public String getEspecialidade() {
             return especialidade;
         }
 
-        public void setEspecialidade(string especialidade) {
+        public void setEspecialidade(String especialidade) {
             this.especialidade = especialidade;
         }
 
-        public string getSenha() {
+        public String getSenha() {
             return senha;
         }
 
-        public void setSenha(string senha) {
-            this.senha = senha;
+        public void setSenha(String senha) {
+            this.senha = "********";
         }
 
-        public Medico(string nome, string crm, string telefone, string especialidade, string senha) {
+        public Medico(String nome, String crm, String telefone, String especialidade, String senha) {
             this.nome = nome;
             this.crm = crm;
             this.telefone = telefone;
@@ -58,7 +58,6 @@ public class Medico {
         }
 
         public void acessar(){}
-
         public void mostrar(){
             System.out.println("Mostrando dados para o medico: " + this.nome);
             System.out.println("Crm:"+ this.crm);

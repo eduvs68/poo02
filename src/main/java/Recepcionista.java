@@ -31,14 +31,14 @@
         }
 
         public String getSenha() {
-            return senha;
+            return "******";
         }
 
         public void setSenha(String senha) {
             this.senha = senha;
         }
 
-        public Recepcionista(string nome, string cpf, string telefone, string senha) {
+        public Recepcionista(String nome, String cpf, String telefone, String senha) {
             this.nome = nome;
             this.cpf = cpf;
             this.telefone = telefone;
@@ -46,11 +46,10 @@
         }
 
         public void acessar(){}
-
         public void mostrar(){
             System.out.println("Mostrando dados do(a) recepcionista: " + this.nome);
             System.out.println("Cpf:"+ this.cpf);
             System.out.println("Telefone:"+ this.telefone);
-            System.out.println("Especialidade:"+ this.especialidade);
+            System.out.println("Senha:"+ this.senha);
         }
     }
